@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(41, 39, 39, 0.744);
 }
 
 .App-logo {
@@ -14,25 +19,76 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  width:25%;
+  background-color: #045a60;
+  height: 90vh;
   font-size: calc(10px + 2vmin);
   color: white;
+  margin-top: 3%;
+  border-radius: 10px 10px;
 }
 
-.App-link {
-  color: #61dafb;
+h3{
+  margin:10% 0px;
+  color: #fff;
+  font-weight: 700;
+}
+.inputbox{
+  width:100%;
+}
+input[type='text']
+{
+  width:70%;
+  margin-right: 10px;
+  height: 100%;
+  padding: 2.5% 2%;
+  outline: none;
+  background-color:transparent;
+  color: #fff;
+  border: transparent;
+  border-bottom: 2px solid red;
+  font-size: 18px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button{
+  width: 40px;
+  height: 40px;
+  border: none;
+  font-size: 24px;
+  background-color: rgb(195, 37, 5);
+  border-radius: 50%;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+}
+.list{
+  width: 85%;
+  margin-top: 10%;
+  padding: 0px 5%;
+}
+.list li{
+  width: 95%;
+  /* border:1px solid red;    */
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+  margin: 3% 0px;
+  font-weight: 600;
+  background-color:rgb(4, 53, 68);
+  padding: 5px 10px;
+}
+.removeItem{
+  width: 30px;
+  height: 30px;
+  color: rgb(0, 179, 255);
+  cursor: pointer;
+  font-size: 20px;
+  background-color: #038a94;
+  border-radius: 50%;
+  font-weight: 600;
+}
+.removeItem:hover{
+  color: rgb(237, 39, 4);
+  background-color: #fff;
 }
